@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Service = ({ service }) => {
-  const { name, img, shortDesc } = service;
+  const { name, img, shortDesc, id } = service;
   return (
     <div className="p-4 lg:w-1/4 md:w-1/2">
       <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
@@ -18,7 +18,7 @@ const Service = ({ service }) => {
           <p className="leading-relaxed mb-3">{shortDesc}</p>
           <div className="flex items-center flex-wrap ">
             <NavLink
-              to="/"
+              to={`/serviceinfo/${id}`}
               className="text-green-500 inline-flex items-center md:mb-2 lg:mb-0"
             >
               See More

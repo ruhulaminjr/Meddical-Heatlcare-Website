@@ -21,8 +21,10 @@ const useFirebase = () => {
     return signInWithPopup(auth, googleProvider);
   };
   const logOut = () => {
+    setIsLoading(true);
     signOut(auth).then(() => {
       setUser(null);
+      setIsLoading(false);
     });
   };
   useEffect(() => {

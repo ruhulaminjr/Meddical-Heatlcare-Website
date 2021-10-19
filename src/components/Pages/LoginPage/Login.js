@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { useHistory, useLocation } from "react-router";
 import useAuth from "../../../hooks/useAuth";
 
 const Login = () => {
   const [isNewUser, setIsNewUser] = useState(false);
+  const location = useLocation();
+  const history = useHistory();
+  const redirectUrl = location.state?.from || "/";
   const {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
@@ -27,6 +31,7 @@ const Login = () => {
         })
           .then(() => {
             setUser(auth.currentUser);
+            history.push(redirectUrl);
           })
           .catch((error) => {
             // An error occurred
@@ -34,13 +39,20 @@ const Login = () => {
           });
       });
     } else {
-      signInWithEmailAndPassword(auth, Email, Password).then((result) => {
-        setUser(result.user);
-      });
+      signInWithEmailAndPassword(auth, Email, Password)
+        .then((result) => {
+          setUser(result.user);
+          history.push(redirectUrl);
+        })
+        .catch((error) => {
+          console.log(error.message);
+        });
     }
   };
   const googleSignInHanlder = () => {
-    logInWithGoogle().then((result) => {});
+    logInWithGoogle().then((result) => {
+      history.push(redirectUrl);
+    });
   };
   return (
     <div className="container mx-auto py-8">

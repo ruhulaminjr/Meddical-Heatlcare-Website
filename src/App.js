@@ -7,7 +7,9 @@ import AboutUsPage from "./components/Pages/AboutUsPage/AboutUsPage";
 import DoctorsPage from "./components/Pages/DoctorsPage/DoctorsPage";
 import Login from "./components/Pages/LoginPage/Login";
 import NotFoundpage from "./components/Pages/NotFound.js/NotFound";
+import ServicesDetails from "./components/Pages/ServicesPage/ServiceDetails/ServicesDetails";
 import ServicesPage from "./components/Pages/ServicesPage/ServicesPage";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import ProviedAuth from "./context/ProviedAuth";
 
 function App() {
@@ -31,6 +33,9 @@ function App() {
           <Route path="/doctors">
             <DoctorsPage />
           </Route>
+          <PrivateRoute path="/serviceinfo/:id">
+            <ServicesDetails />
+          </PrivateRoute>
           <Route path="*">
             <NotFoundpage />
           </Route>
