@@ -3,7 +3,7 @@ import useServices from "../../../hooks/useServices";
 import Service from "../../Services/Service/Service";
 import "./servicespage.css";
 const ServicesPage = () => {
-    const { serviceData } = useServices();
+  const { serviceData } = useServices();
   return (
     <div>
       <div className="service-header">
@@ -15,7 +15,7 @@ const ServicesPage = () => {
         <div className="container px-5 py-4 mx-auto">
           <div className="flex flex-wrap -m-4">
             {serviceData.map((item) => (
-              <Service service={item} />
+              <Service service={item} key={item.id} />
             ))}
           </div>
         </div>

@@ -17,7 +17,7 @@ const Services = () => {
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-4 mx-auto">
           <div className="flex flex-wrap -m-4">
-            {serviceData.splice(0, 4).map((item) => (
+            {serviceData.map((item) => (
               <Service service={item} key={item.id}/>
             ))}
           </div>

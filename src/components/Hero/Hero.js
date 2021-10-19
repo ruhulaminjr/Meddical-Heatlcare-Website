@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./hero.css";
 const Hero = () => {
   return (
@@ -12,9 +13,12 @@ const Hero = () => {
                 Leading the Way <br /> in Medical Excellence
               </h1>
               <div className="flex justify-center">
-                <button className="inline-flex text-white bg-green-700 border-0 py-2 px-6 focus:outline-none hover:bg-green-900 rounded text-lg my-2">
-                  Out Services
-                </button>
+                <NavLink
+                  to="/services"
+                  className="inline-flex text-white bg-green-700 border-0 py-2 px-6 focus:outline-none hover:bg-green-900 rounded text-lg my-2"
+                >
+                  Our Services
+                </NavLink>
               </div>
             </div>
           </div>

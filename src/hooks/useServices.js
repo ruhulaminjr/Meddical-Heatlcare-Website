@@ -8,6 +8,7 @@ const useServices = () => {
     )
       .then((res) => res.json())
       .then((data) => setServiceData(data));
+    console.log("data Loaded");
   }, []);
   return { serviceData };
 };

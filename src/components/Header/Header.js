@@ -16,7 +16,7 @@ const Header = () => {
           </NavLink>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
             <NavLink
-              to="/home"
+              to="/"
               className="mr-5 text-white hover:text-green-700"
             >
               Home
