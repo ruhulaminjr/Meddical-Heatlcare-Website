@@ -37,7 +37,7 @@ function App() {
           <Route path="/doctors">
             <DoctorsPage />
           </Route>
-          <PrivateRoute to="/emergency">
+          <PrivateRoute path="/emergency">
             <EmergencyPage/>
           </PrivateRoute>
           <PrivateRoute path="/serviceinfo/:id">

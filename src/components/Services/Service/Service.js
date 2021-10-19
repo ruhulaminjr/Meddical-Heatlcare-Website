@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Service = ({ service }) => {
   const { name, img, shortDesc, id } = service;
   return (
-    <div className="p-4 lg:w-1/4 md:w-1/2">
+    <div className="transition duration-500 ease-in-out p-4 lg:w-1/4 md:w-1/2 transform hover:-translate-y-1 hover:scale-110">
       <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
         <img
           className="lg:h-48 md:h-36 w-full object-cover object-center"

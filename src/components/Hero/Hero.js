@@ -15,7 +15,7 @@ const Hero = () => {
               <div className="flex justify-center">
                 <NavLink
                   to="/services"
-                  className="inline-flex text-white bg-green-700 border-0 py-2 px-6 focus:outline-none hover:bg-green-900 rounded text-lg my-2"
+                  className="animate-pulse inline-flex text-white bg-green-700 border-0 py-2 px-6 focus:outline-none hover:bg-green-900 rounded text-lg my-2"
                 >
                   Our Services
                 </NavLink>
@@ -39,7 +39,10 @@ const Hero = () => {
           the vaccination to thousands of care home staff and residents, as well
           as people who cannot leave their homes.
         </p>
-        <button className="bg-gray-300 hover:bg-green-700 hover:text-white text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center md:my-2 sm:my-2">
+        <NavLink
+          to="/about"
+          className="bg-gray-300 hover:bg-green-700 hover:text-white text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center md:my-2 sm:my-2"
+        >
           Learn More
           <svg
             fill="none"
@@ -52,7 +55,7 @@ const Hero = () => {
           >
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
-        </button>
+        </NavLink>
       </div>
       <div className="container mx-auto">
         <div className="hero-img">

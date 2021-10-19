@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="container px-5 py-8 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <NavLink
-              to="/home"
+              to="/"
               className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
             >
               <span className="ml-3 text-xl text-white">
@@ -28,7 +28,7 @@ const Footer = () => {
               <nav className="list-none mb-10">
                 <li>
                   <NavLink
-                    to="/home"
+                    to="/"
                     className="text-white hover:text-gray-300"
                   >
                     Emergenchy Services
@@ -36,7 +36,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/home"
+                    to="/"
                     className="text-white hover:text-gray-300"
                   >
                     Free Checkup
@@ -44,7 +44,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/home"
+                    to="/"
                     className="text-white hover:text-gray-300"
                   >
                     Blood Test
@@ -52,7 +52,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/home"
+                    to="/"
                     className="text-white hover:text-gray-300"
                   >
                     Dna Test
@@ -67,7 +67,7 @@ const Footer = () => {
               <nav className="list-none mb-10">
                 <li>
                   <NavLink
-                    to="/home"
+                    to="/"
                     className="text-white hover:text-gray-300"
                   >
                     Gastroenterology
@@ -75,7 +75,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/home"
+                    to="/"
                     className="text-white hover:text-gray-300"
                   >
                     Gynaecology
@@ -83,7 +83,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/home"
+                    to="/"
                     className="text-white hover:text-gray-300"
                   >
                     Dermatology
@@ -91,7 +91,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="/home"
+                    to="/"
                     className="text-white hover:text-gray-300"
                   >
                     Neurology
@@ -106,7 +106,7 @@ const Footer = () => {
             <p className="text-gray-200 text-sm text-center sm:text-left">
               © 2021 MEDDICAL —
               <NavLink
-                to="/home"
+                to="/"
                 href="https://twitter.com/knyttneve"
                 rel="noopener noreferrer"
                 className="text-whiteml-1"
@@ -116,7 +116,7 @@ const Footer = () => {
               </NavLink>
             </p>
             <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-              <NavLink to="/home" className="text-gray-500">
+              <NavLink to="/" className="text-gray-500">
                 <svg
                   fill="currentColor"
                   strokeLinecap="round"
@@ -128,7 +128,7 @@ const Footer = () => {
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                 </svg>
               </NavLink>
-              <NavLink to="/home" className="ml-3 text-gray-500">
+              <NavLink to="/" className="ml-3 text-gray-500">
                 <svg
                   fill="currentColor"
                   strokeLinecap="round"
@@ -140,7 +140,7 @@ const Footer = () => {
                   <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
                 </svg>
               </NavLink>
-              <NavLink to="/home" className="ml-3 text-gray-500">
+              <NavLink to="/" className="ml-3 text-gray-500">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -154,7 +154,7 @@ const Footer = () => {
                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                 </svg>
               </NavLink>
-              <NavLink to="/home" className="ml-3 text-gray-500">
+              <NavLink to="/" className="ml-3 text-gray-500">
                 <svg
                   fill="currentColor"
                   stroke="currentColor"

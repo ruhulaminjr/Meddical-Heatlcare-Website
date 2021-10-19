@@ -7,7 +7,7 @@ const Doctor = ({ doctor }) => {
       <div className="h-full flex flex-col items-center text-center">
         <img
           alt="team"
-          className="flex-shrink-0 rounded-lg w-full h-64 object-cover object-center mb-4"
+          className="flex-shrink-0 rounded-lg w-full h-64 object-cover object-center mb-4 transition duration-300 ease-in-out transform hover:scale-110"
           src={img}
         />
         <div className="w-full">
