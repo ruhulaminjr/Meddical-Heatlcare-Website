@@ -3,6 +3,7 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
+import OpenRoute from "./components/OpenRoute/OpenRoute";
 import AboutUsPage from "./components/Pages/AboutUsPage/AboutUsPage";
 import BookingPage from "./components/Pages/BookingPage/BookingPage";
 import BookSuccess from "./components/Pages/BookingPage/BookSuccess";
@@ -23,9 +24,9 @@ function App() {
           <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/login">
+          <OpenRoute path="/login">
             <Login />
-          </Route>
+          </OpenRoute>
           <Route path="/about">
             <AboutUsPage />
           </Route>

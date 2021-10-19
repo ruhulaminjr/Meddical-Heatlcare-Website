@@ -33,8 +33,8 @@ const Login = () => {
             displayName: Name,
           })
             .then(() => {
-              setUser(auth.currentUser);
               history.push(redirectUrl);
+              window.location.reload();
             })
             .catch((error) => {
               setError(error.message);
