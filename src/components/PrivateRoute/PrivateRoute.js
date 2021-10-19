@@ -8,7 +8,7 @@ const PrivateRoute = ({ children, ...rest }) => {
   if (isLoading) {
     return (
       <div className="container mx-auto p-12 flex items-center justify-center">
-        <div class="loader"></div>
+        <div className="loader"></div>
       </div>
     );
   }

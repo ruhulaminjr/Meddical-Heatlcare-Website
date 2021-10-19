@@ -4,6 +4,8 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import AboutUsPage from "./components/Pages/AboutUsPage/AboutUsPage";
+import BookingPage from "./components/Pages/BookingPage/BookingPage";
+import BookSuccess from "./components/Pages/BookingPage/BookSuccess";
 import DoctorsPage from "./components/Pages/DoctorsPage/DoctorsPage";
 import Login from "./components/Pages/LoginPage/Login";
 import NotFoundpage from "./components/Pages/NotFound.js/NotFound";
@@ -35,6 +37,12 @@ function App() {
           </Route>
           <PrivateRoute path="/serviceinfo/:id">
             <ServicesDetails />
+          </PrivateRoute>
+          <PrivateRoute path="/booking/:name">
+            <BookingPage />
+          </PrivateRoute>
+          <PrivateRoute path="/successfull">
+            <BookSuccess />
           </PrivateRoute>
           <Route path="*">
             <NotFoundpage />

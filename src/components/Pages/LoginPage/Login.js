@@ -5,6 +5,7 @@ import useAuth from "../../../hooks/useAuth";
 
 const Login = () => {
   const [isNewUser, setIsNewUser] = useState(false);
+  const [error, setError] = useState(null);
   const location = useLocation();
   const history = useHistory();
   const redirectUrl = location.state?.from || "/";
@@ -25,34 +26,45 @@ const Login = () => {
     const { Password, Email, Name } = data;
 
     if (isNewUser) {
-      createUserWithEmailAndPassword(auth, Email, Password).then((result) => {
-        updateProfile(auth.currentUser, {
-          displayName: Name,
-        })
-          .then(() => {
-            setUser(auth.currentUser);
-            history.push(redirectUrl);
+      createUserWithEmailAndPassword(auth, Email, Password)
+        .then((result) => {
+          setError(null);
+          updateProfile(auth.currentUser, {
+            displayName: Name,
           })
-          .catch((error) => {
-            // An error occurred
-            // ...
-          });
-      });
+            .then(() => {
+              setUser(auth.currentUser);
+              history.push(redirectUrl);
+            })
+            .catch((error) => {
+              setError(error.message);
+              // ...
+            });
+        })
+        .catch((error) => {
+          setError(error.message);
+        });
     } else {
       signInWithEmailAndPassword(auth, Email, Password)
         .then((result) => {
           setUser(result.user);
+          setError(null);
           history.push(redirectUrl);
         })
         .catch((error) => {
-          console.log(error.message);
+          setError(error.message);
         });
     }
   };
   const googleSignInHanlder = () => {
-    logInWithGoogle().then((result) => {
-      history.push(redirectUrl);
-    });
+    logInWithGoogle()
+      .then((result) => {
+        setError(null);
+        history.push(redirectUrl);
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
   };
   return (
     <div className="container mx-auto py-8">
@@ -163,6 +175,7 @@ const Login = () => {
               New User ?
             </button>
           )}
+          {error && <p className="text-red-500">{error}</p>}
           <p className="mt-4">Or Sign In With</p>
           <button className="p-2" onClick={googleSignInHanlder}>
             <img
