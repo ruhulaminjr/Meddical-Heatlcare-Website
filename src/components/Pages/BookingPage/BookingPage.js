@@ -4,7 +4,7 @@ import { useHistory, useLocation } from "react-router";
 import useAuth from "../../../hooks/useAuth";
 
 const BookingPage = () => {
-    const history = useHistory()
+  const history = useHistory();
   const {
     register,
     handleSubmit,
@@ -89,11 +89,14 @@ const BookingPage = () => {
                   minLength: 11,
                 })}
               />
-              {errors.Name?.type === "minLength" && (
-                <p className="text-red-500">Enter Your 11 Digit Number</p>
+              {errors.Phone?.type === "minLength" && (
+                <p className="text-red-500">Type 11 Digit Number</p>
               )}
-              {errors.Name?.type === "required" && (
+              {errors.Phone?.type === "required" && (
                 <p className="text-red-500">Phone Number Is Required</p>
+              )}
+              {errors.Phone?.type === "maxLength" && (
+                <p className="text-red-500">Number Is too long</p>
               )}
             </div>
             <button
