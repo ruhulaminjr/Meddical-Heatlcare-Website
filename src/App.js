@@ -8,6 +8,7 @@ import AboutUsPage from "./components/Pages/AboutUsPage/AboutUsPage";
 import BookingPage from "./components/Pages/BookingPage/BookingPage";
 import BookSuccess from "./components/Pages/BookingPage/BookSuccess";
 import DoctorsPage from "./components/Pages/DoctorsPage/DoctorsPage";
+import EmergencyPage from "./components/Pages/EmergencyPage/EmergencyPage";
 import Login from "./components/Pages/LoginPage/Login";
 import NotFoundpage from "./components/Pages/NotFound.js/NotFound";
 import ServicesDetails from "./components/Pages/ServicesPage/ServiceDetails/ServicesDetails";
@@ -36,6 +37,9 @@ function App() {
           <Route path="/doctors">
             <DoctorsPage />
           </Route>
+          <PrivateRoute to="/emergency">
+            <EmergencyPage/>
+          </PrivateRoute>
           <PrivateRoute path="/serviceinfo/:id">
             <ServicesDetails />
           </PrivateRoute>

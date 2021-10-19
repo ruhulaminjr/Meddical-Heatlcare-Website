@@ -24,7 +24,7 @@ const Header = () => {
               to="/about"
               className="mr-5 text-white hover:text-green-700"
             >
-              About Us
+              About us
             </NavLink>
             <NavLink
               to="/services"
@@ -39,7 +39,7 @@ const Header = () => {
               Doctors
             </NavLink>
             <NavLink
-              to="/home"
+              to="/emergency"
               className="mr-5 text-white hover:text-green-700"
             >
               Emergency Services
