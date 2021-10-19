@@ -1,7 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 const Header = () => {
+  const { user, logOut } = useAuth();
   return (
     <div>
       <header className="text-gray-600 body-font bg-gray-800	">
@@ -15,10 +17,7 @@ const Header = () => {
             </span>
           </NavLink>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <NavLink
-              to="/"
-              className="mr-5 text-white hover:text-green-700"
-            >
+            <NavLink to="/" className="mr-5 text-white hover:text-green-700">
               Home
             </NavLink>
             <NavLink
@@ -46,34 +45,49 @@ const Header = () => {
               Emergency Services
             </NavLink>
           </nav>
-          <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center me-1 mx-4 lg:my-0 xl:my-0 my-4 hover:bg-green-700 hover:text-white">
-            Login
-            <svg
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              className="w-4 h-4 ml-1"
-              viewBox="0 0 24 24"
+          {user ? (
+            <>
+              Sign as:{" "}
+              <p className="mr-5 text-white hover:text-green-700">
+                {user.displayName}
+              </p>{" "}
+              <button
+                className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center me-1 mx-4 lg:my-0 xl:my-0 my-4 hover:bg-green-700 hover:text-white"
+                onClick={logOut}
+              >
+                Logout
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="w-4 h-4 ml-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </>
+          ) : (
+            <NavLink
+              to="/login"
+              className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center me-1 mx-4 lg:my-0 xl:my-0 my-4 hover:bg-green-700 hover:text-white"
             >
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
-          <button className="bg-gray-300 hover:bg-green-700 hover:text-white text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center md:my-2 sm:my-2">
-            Sing Up
-            <svg
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              className="w-4 h-4 ml-1"
-              viewBox="0 0 24 24"
-            >
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
+              Login
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                className="w-4 h-4 ml-1"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </NavLink>
+          )}
         </div>
       </header>
     </div>

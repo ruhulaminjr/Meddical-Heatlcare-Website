@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import AboutUsPage from "./components/Pages/AboutUsPage/AboutUsPage";
 import DoctorsPage from "./components/Pages/DoctorsPage/DoctorsPage";
+import Login from "./components/Pages/LoginPage/Login";
 import NotFoundpage from "./components/Pages/NotFound.js/NotFound";
 import ServicesPage from "./components/Pages/ServicesPage/ServicesPage";
 import ProviedAuth from "./context/ProviedAuth";
@@ -17,6 +18,9 @@ function App() {
         <Switch>
           <Route path="/" exact>
             <Home />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
           <Route path="/about">
             <AboutUsPage />
