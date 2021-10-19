@@ -4,72 +4,96 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
-      <footer class="text-white bg-gray-800 body-font">
-        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+      <footer className="text-white bg-gray-800 body-font">
+        <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <NavLink
               to="/home"
-              class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+              className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
             >
               <span className="ml-3 text-xl text-white">
                 MED
                 <span className="text-green-700 hover:text-white">DICAL</span>
               </span>
             </NavLink>
-            <p class="mt-2 text-sm text-gray-200">
+            <p className="mt-2 text-sm text-gray-200">
               Leading the Way in Medical Excellence
             </p>
           </div>
-          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-green-500 tracking-widest text-sm mb-3">
+          <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-medium text-green-500 tracking-widest text-sm mb-3">
                 Services
               </h2>
-              <nav class="list-none mb-10">
+              <nav className="list-none mb-10">
                 <li>
-                  <NavLink to="/home" class="text-white hover:text-gray-300">
+                  <NavLink
+                    to="/home"
+                    className="text-white hover:text-gray-300"
+                  >
                     Emergenchy Services
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/home" class="text-white hover:text-gray-300">
+                  <NavLink
+                    to="/home"
+                    className="text-white hover:text-gray-300"
+                  >
                     Free Checkup
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/home" class="text-white hover:text-gray-300">
+                  <NavLink
+                    to="/home"
+                    className="text-white hover:text-gray-300"
+                  >
                     Blood Test
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/home" class="text-white hover:text-gray-300">
+                  <NavLink
+                    to="/home"
+                    className="text-white hover:text-gray-300"
+                  >
                     Dna Test
                   </NavLink>
                 </li>
               </nav>
             </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="title-font font-medium text-green-500 tracking-widest text-sm mb-3">
+            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 className="title-font font-medium text-green-500 tracking-widest text-sm mb-3">
                 Specialties
               </h2>
-              <nav class="list-none mb-10">
+              <nav className="list-none mb-10">
                 <li>
-                  <NavLink to="/home" class="text-white hover:text-gray-300">
+                  <NavLink
+                    to="/home"
+                    className="text-white hover:text-gray-300"
+                  >
                     Gastroenterology
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/home" class="text-white hover:text-gray-300">
+                  <NavLink
+                    to="/home"
+                    className="text-white hover:text-gray-300"
+                  >
                     Gynaecology
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/home" class="text-white hover:text-gray-300">
+                  <NavLink
+                    to="/home"
+                    className="text-white hover:text-gray-300"
+                  >
                     Dermatology
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/home" class="text-white hover:text-gray-300">
+                  <NavLink
+                    to="/home"
+                    className="text-white hover:text-gray-300"
+                  >
                     Neurology
                   </NavLink>
                 </li>
@@ -77,67 +101,67 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="bg-gray-900 text-white">
-          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-            <p class="text-gray-200 text-sm text-center sm:text-left">
+        <div className="bg-gray-900 text-white">
+          <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p className="text-gray-200 text-sm text-center sm:text-left">
               © 2021 MEDDICAL —
               <NavLink
                 to="/home"
                 href="https://twitter.com/knyttneve"
                 rel="noopener noreferrer"
-                class="text-whiteml-1"
+                className="text-whiteml-1"
                 target="_blank"
               >
                 @RuhulAmin
               </NavLink>
             </p>
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-              <NavLink to="/home" class="text-gray-500">
+            <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <NavLink to="/home" className="text-gray-500">
                 <svg
                   fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-5 h-5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                 </svg>
               </NavLink>
-              <NavLink to="/home" class="ml-3 text-gray-500">
+              <NavLink to="/home" className="ml-3 text-gray-500">
                 <svg
                   fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-5 h-5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
                   <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
                 </svg>
               </NavLink>
-              <NavLink to="/home" class="ml-3 text-gray-500">
+              <NavLink to="/home" className="ml-3 text-gray-500">
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-5 h-5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                 </svg>
               </NavLink>
-              <NavLink to="/home" class="ml-3 text-gray-500">
+              <NavLink to="/home" className="ml-3 text-gray-500">
                 <svg
                   fill="currentColor"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="0"
-                  class="w-5 h-5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="0"
+                  className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
                   <path

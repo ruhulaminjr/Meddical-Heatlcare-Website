@@ -1,7 +1,6 @@
 import React from "react";
 import Contact from "../Contact/Contact";
 import Doctors from "../Doctors/Doctors";
-import Footer from "../Footer/Footer";
 import Hero from "../Hero/Hero";
 import Services from "../Services/Services";
 import Specialties from "../Specialties/Specialties";
@@ -14,7 +13,6 @@ const Home = () => {
       <Specialties />
       <Doctors />
       <Contact />
-      <Footer />
     </div>
   );
 };

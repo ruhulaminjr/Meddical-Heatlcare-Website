@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../images/doctor.png";
 
 const Header = () => {
   return (
@@ -23,19 +22,19 @@ const Header = () => {
               Home
             </NavLink>
             <NavLink
-              to="/home"
+              to="/about"
               className="mr-5 text-white hover:text-green-700"
             >
               About Us
             </NavLink>
             <NavLink
-              to="/home"
+              to="/services"
               className="mr-5 text-white hover:text-green-700"
             >
               Services
             </NavLink>
             <NavLink
-              to="/home"
+              to="/doctors"
               className="mr-5 text-white hover:text-green-700"
             >
               Doctors
@@ -52,9 +51,9 @@ const Header = () => {
             <svg
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               className="w-4 h-4 ml-1"
               viewBox="0 0 24 24"
             >
@@ -66,9 +65,9 @@ const Header = () => {
             <svg
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               className="w-4 h-4 ml-1"
               viewBox="0 0 24 24"
             >

@@ -31,4 +31,36 @@ const data = [
       "Doctors belonging to various specialties from the hospital were available at the clinic to answer queries.",
     desc: "The emphasis of the programme was on senior citizens, who have the tendency of delaying regular check-ups, unless there is a complication.The aim was to spread awareness among people, especially the elderly, about early detection of various diseases to avoid complications later in life.",
   },
+  {
+    id: 5,
+    name: "Cranio-Maxillo Facial Surgery",
+    img: "https://www.drgunessee.com/images/maxillo1.jpg",
+    shortDesc:
+      "Doctors belonging to various specialties from the hospital were available at the clinic to answer queries.",
+    desc: "The emphasis of the programme was on senior citizens, who have the tendency of delaying regular check-ups, unless there is a complication.The aim was to spread awareness among people, especially the elderly, about early detection of various diseases to avoid complications later in life.",
+  },
+  {
+    id: 6,
+    name: "Clinical Nutrition & Dietetics",
+    img: "https://doclists.in/wp-content/uploads/2021/07/Best-Nutritionist-in-India.jpg",
+    shortDesc:
+      "Doctors belonging to various specialties from the hospital were available at the clinic to answer queries.",
+    desc: "The emphasis of the programme was on senior citizens, who have the tendency of delaying regular check-ups, unless there is a complication.The aim was to spread awareness among people, especially the elderly, about early detection of various diseases to avoid complications later in life.",
+  },
+  {
+    id: 7,
+    name: "Kidney Transplant - Paediatric",
+    img: "https://ukhealthcare.uky.edu/sites/default/files/inline-images/girl-in-hospital-bed.jpg",
+    shortDesc:
+      "Doctors belonging to various specialties from the hospital were available at the clinic to answer queries.",
+    desc: "The emphasis of the programme was on senior citizens, who have the tendency of delaying regular check-ups, unless there is a complication.The aim was to spread awareness among people, especially the elderly, about early detection of various diseases to avoid complications later in life.",
+  },
+  {
+    id: 8,
+    name: "Diabetology",
+    img: "https://www.medigrad.com/sites/default/files/courses/fellowship_in_diabetology.jpg",
+    shortDesc:
+      "Doctors belonging to various specialties from the hospital were available at the clinic to answer queries.",
+    desc: "The emphasis of the programme was on senior citizens, who have the tendency of delaying regular check-ups, unless there is a complication.The aim was to spread awareness among people, especially the elderly, about early detection of various diseases to avoid complications later in life.",
+  },
 ];

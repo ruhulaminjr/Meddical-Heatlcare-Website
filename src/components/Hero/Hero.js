@@ -12,7 +12,7 @@ const Hero = () => {
                 Leading the Way <br /> in Medical Excellence
               </h1>
               <div className="flex justify-center">
-                <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg my-2">
+                <button className="inline-flex text-white bg-green-700 border-0 py-2 px-6 focus:outline-none hover:bg-green-900 rounded text-lg my-2">
                   Out Services
                 </button>
               </div>
@@ -40,9 +40,9 @@ const Hero = () => {
           <svg
             fill="none"
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             className="w-4 h-4 ml-1"
             viewBox="0 0 24 24"
           >

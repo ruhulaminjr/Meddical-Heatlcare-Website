@@ -1,8 +1,9 @@
 import React from "react";
+import useServices from "../../hooks/useServices";
 import Service from "./Service/Service";
 
 const Services = () => {
-  const number = [1, 2, 3, 4];
+  const { serviceData } = useServices();
   return (
     <div>
       <div className="container mx-auto flex px-2 py-2 flex-col items-center">
@@ -16,8 +17,8 @@ const Services = () => {
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-4 mx-auto">
           <div className="flex flex-wrap -m-4">
-            {number.map((num, idx) => (
-              <Service key={idx} />
+            {serviceData.splice(0, 4).map((item) => (
+              <Service service={item} key={item.id}/>
             ))}
           </div>
         </div>

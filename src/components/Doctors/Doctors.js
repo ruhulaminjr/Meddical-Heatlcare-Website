@@ -1,8 +1,9 @@
 import React from "react";
+import useDoctor from "../../hooks/useDoctor";
 import Doctor from "./Doctor/Doctor";
 
 const Doctors = () => {
-  const number = [1, 2, 3];
+  const { doctorData } = useDoctor();
   return (
     <div>
       <div className="container mx-auto flex px-2 py-2 flex-col items-center">
@@ -16,8 +17,8 @@ const Doctors = () => {
       <section className="text-gray-600 body-font">
         <div className="container lg:px-5 px-2 py-4 mx-auto">
           <div className="flex flex-wrap items-center justify-center">
-            {number.map((num, idx) => (
-              <Doctor key={idx} />
+            {doctorData.splice(0, 3).map((doctor) => (
+              <Doctor key={doctor.id} doctor={doctor} />
             ))}
           </div>
         </div>
