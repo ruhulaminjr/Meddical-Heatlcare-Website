@@ -59,7 +59,7 @@ const Login = () => {
   const googleSignInHanlder = () => {
     logInWithGoogle()
       .then((result) => {
-        setError(null);
+        
         history.push(redirectUrl);
       })
       .catch((error) => {
